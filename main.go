@@ -6,15 +6,15 @@ import (
 	"syscall"
 )
 
-func main() {
-	var Version = "development"
-	var stat syscall.Statfs_t
+var version = "development"
 
-	versionFlag := flag.Bool("version", false, "prints the version")
+func main() {
+	var stat syscall.Statfs_t
+	var versionFlag = flag.Bool("version", false, "Print the version and exit")
 	flag.Parse()
 
 	if *versionFlag {
-		fmt.Println("Verison:", Version)
+		fmt.Println("Version:", version)
 		return
 	}
 
