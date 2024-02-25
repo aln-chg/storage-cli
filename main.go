@@ -1,12 +1,22 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"syscall"
 )
 
 func main() {
+	var Version = "development"
 	var stat syscall.Statfs_t
+
+	versionFlag := flag.Bool("version", false, "prints the version")
+	flag.Parse()
+
+	if *versionFlag {
+		fmt.Println("Verison:", Version)
+		return
+	}
 
 	fs := "/" // Root file system. Change as needed.
 
