@@ -7,10 +7,10 @@ A simple CLI tool that lets you see your storage information.
 ```
 brew install storage-cli
 ```
-After that just type storage anywhere in the terminal and it should work.
+After that just type `storage` anywhere in the terminal and it should work.
 
 
-Use storage --version to check if it has been installed or not.
+Use `storage --version` to check if it has been installed or not.
 
 
 
