@@ -3,6 +3,12 @@
 A simple CLI tool that lets you see your storage information.
 
 ## Getting Started
+### Preferred way:
+```
+brew install storage-cli
+```
+
+### Install it manually(note that using brew install would be better since you would get the updates)
 
 **Step 1:** Clone the repository to your local machine by running the following command in your terminal:
 
